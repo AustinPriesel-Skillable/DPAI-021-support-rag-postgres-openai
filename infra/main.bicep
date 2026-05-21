@@ -292,7 +292,7 @@ module containerApps 'core/host/container-apps.bicep' = {
 }
 
 // Web frontend
-var webAppName = replace('${take(prefix, 19)}-ca', '--', '-')
+var webAppName = replace('${take(prefix, 19)}ca', '--', '-')
 var webAppIdentityName = '${prefix}-id-web'
 
 var azureOpenAIKeySecret = !empty(azureOpenAIKey)
